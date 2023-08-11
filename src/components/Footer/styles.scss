@@ -1,0 +1,74 @@
+
+@import '../../constants/styles.scss';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 0 2rem;
+    width: 100%;
+
+    .primary-btn {
+        border-radius: 0.625rem!important;
+        padding: 0.5rem;
+        height: auto;
+        background-color: $hoobe-primary;
+        color: $white;
+        font-weight: 600;
+        display: flex;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+
+        outline: none;
+        font-size: 0.875rem;
+        justify-content: center;
+        border-radius: 2rem;
+        align-items: center;
+        border: 0;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        transition: all .12s ease-in-out;
+        transform: scale(1);
+
+        &:hover {
+            background-color: $hoobe-primary-dark;
+        }
+
+        &:focus {
+            transform: scale(0.98);
+        }
+
+        .btn-logo {
+            width: 24px;
+            height: 24px;
+        }
+
+        span {
+            margin-left: 0.5rem;
+        }
+    }
+
+    .text-btn {
+        color: $med-gray;
+        border: none;
+        outline: none;
+        margin-top: 1.5rem;
+        padding: 0.25rem 0.75rem;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        border-radius: 1.125rem;
+        transition: color .3s ease-in-out;
+        font-size: 0.875rem;
+        background-color: transparent;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+
+        &:hover {
+            color: $hoobe-primary;
+            text-decoration: underline;
+        }
+    }
+}
